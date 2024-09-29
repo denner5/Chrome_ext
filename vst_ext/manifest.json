@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "IP/URL Searcher",
+    "version": "1.0",
+    "permissions": ["contextMenus", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "vtvt.png"
+    },
+"commands": {
+    "search": {
+        "suggested_key":{
+            "default": "Ctrl+Shift+E"
+        },
+        "description": "Search highlighted text on VirusTotal"
+        }
+    }
+}
